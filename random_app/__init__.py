@@ -5,7 +5,11 @@ import io
 import random
 
 app = Flask(__name__)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///participants.db'
+app.config["TEMPLATES_AUTO_RELOAD"] = True
+
+
 db = SQLAlchemy(app)
 
 # adding error handler
