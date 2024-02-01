@@ -67,7 +67,7 @@
             <div class="py-5 text-center" style="display: flex; flex-direction: column;">
                 <a href="#" class="block text-xl font-bold text-gray-800 dark:text-white" tabindex="0" role="link">{{ random_participant.username or "..."}}</a>
                 <span class="text-sm text-gray-700 dark:text-gray-200">Batch Code: {{ random_participant.batch_no or "..." }}</span><br>
-                <span class="text-sm text-gray-700 dark:text-gray-200">LinkedIn: <a href="{{ random_participant.linkedin_url }}" target="_blank">{{ random_participant.linkedin_url or "..."}}</a></span>
+                <span class="text-sm text-gray-700 dark:text-gray-200">LinkedIn: <a  href="{{ random_participant.linkedin_url }}" target="_blank">{{ random_participant.linkedin_url or "..."}} </a></span>
             </div>
             {% else %}
             <div class="py-5 text-center" style="display: flex; flex-direction: column;">

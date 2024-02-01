@@ -16,6 +16,7 @@ def upload_controller():
                 # Read the CSV file using pandas
                 csv_file = TextIOWrapper(file.stream._file, encoding='utf-8')
                 df = pd.read_csv(csv_file)
+                print(df)
 
                 # Iterate over the rows and insert into the database
                 for _, row in df.iterrows():
